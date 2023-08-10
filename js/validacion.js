@@ -12,9 +12,9 @@ function passOk() {
   let nombre = document.getElementById("nombre").value;
   let apellido = document.getElementById("apellido").value;
   let email = document.getElementById("email").value;
-  let terminos = document.getElementById("terminos").value;
+  let terminos = document.getElementById("terminos").checked;
 
-  if (contrasenia1.length >= 6 && contrasenia1 === contrasenia2 && nombre.length > 0 && apellido.length > 0 && email.length > 0 && terminos === true) {
+  if ((contrasenia1.length >= 6) && (contrasenia1 === contrasenia2) && (nombre.length > 0 ) && (apellido.length > 0) && (email.length > 0) && (terminos === true)) {
     showAlertSuccess();
     console.log("success");
   } else {
